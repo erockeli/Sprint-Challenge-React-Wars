@@ -11,7 +11,7 @@ export default function House() {
         .get (`https://swapi.co/api/people/`)
         .then(response => {
             console.log(response);
-            setItem(response.data);  
+            setItem(response.data.results);  
         })
         .catch(error => {
             console.log('No data received', error);
@@ -20,7 +20,7 @@ export default function House() {
 
     return (
         <div>
-            {item.map (ship => {return(
+            {item.map(ship => {return(
                 <Housecard
                 key={ship.name}
                 name={ship.name}
