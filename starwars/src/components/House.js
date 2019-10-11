@@ -3,11 +3,6 @@ import Housecard from './Housecard';
 import axios from "axios";
 
 
-
-
-
-
-
 export default function House() {
     const [item, setItem] = useState([]);
 
@@ -24,9 +19,9 @@ export default function House() {
     },[]);
 
     return (
-        <Housecard>
-            {item.map(ship => {return(
-                <CharacterCard
+        <div>
+            {item.map (ship => {return(
+                <Housecard
                 key={ship.name}
                 name={ship.name}
                 height = {ship.height}
@@ -38,9 +33,9 @@ export default function House() {
                 hairColor = {ship.hair_color}
                 />
             )})}
-            </Housecard>
-
-    )
+    
+            </div>
+    );
 
 }
             
