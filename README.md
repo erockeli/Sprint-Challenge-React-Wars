@@ -25,14 +25,31 @@ In this challenge, create a web page that presents a styled list of Star Wars ch
 Demonstrate your understanding of this Sprint's concepts by answering the following free-form questions. Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager.
 
 - [ ] What is React JS and what problems does it try and solve? Support your answer with concepts introduced in class and from your personal research on the web.
-
+ 
+A User Interface Component Library built by Facebook 
+ 
 - [ ] What does it mean to _think_ in react?
-
+ 
+Thinking in react means thinking in terms of components (class and functional
+types), and also in terms of data state, and props. Tie all that together
+using the JSX syntax to efficiently build out interfaces that present data
+to the user dynamically.
+ 
 - [ ] Describe state.
-
+ 
+        IState is where a class component's data is stored. It is an immutable object, so
+state can not be changed directly, only with the setState() method. state data
+can be passed down to other components in the form of props.
+ 
 - [ ] Describe props.
-
+ 
+        Short for properties, props can customizes components.Props are information that is passed into React components. In JSX, they read like HTML attributes. They are how data is moved between components. They can be displayed by React through a process known as interpolation.
+ 
 - [ ] What are side effects, and how do you sync effects in a React component to state or prop changes?
+ 
+    They let you use state and other React features without writing a class. You can add the state in your effect
+ 
+
 
 ## Project Set Up
 
